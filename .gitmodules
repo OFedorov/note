@@ -1,0 +1,3 @@
+[submodule "console_tools"]
+	path = console_tools
+	url = https://github.com/OFedorov/console_tools
