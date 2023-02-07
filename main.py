@@ -147,6 +147,9 @@ def interactive_show(repository):
             notes[current_num].message = updated_message
             repository.update_note(notes[current_num])
         elif cmd == b"D" or cmd == b"d":
+            print("Delete? [y/n]")
+            if get_key() != b"y":
+                continue
             repository.delete_note(notes[current_num])
             notes = repository.select_notes()
             notes.reverse()
